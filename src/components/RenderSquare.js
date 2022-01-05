@@ -1,7 +1,7 @@
 import Square from "./Square";
 
-function RenderSquare({ i, onClick, onChange }) {
-    return <Square value={i} onClick={onClick} />;
+function RenderSquare({ value, onClick }) {
+    return <Square value={value} onClick={onClick} />;
 }
 
 export default RenderSquare;
