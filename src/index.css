@@ -73,21 +73,25 @@ body {
   background-color: rgb(177, 179, 162);
 }
 
+.btndiv{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
 @media only screen and (max-width: 500px) {
-  .square{
-    height: 20px;
-    width: 20px;
-    line-height: 0px;
-  }
-  .status{
-    font-size: 10px;
-  }
-  .btn{
-    height: 20px;
-    width: 50px;
-    font-size: 10px;
-  }
+  
   .main{
-    height: 30%;
+    height: 40%;
+    width: 40%;
   }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .main{
+    height: 40%;
+    width: fit-content;
+  }
+  
 }
