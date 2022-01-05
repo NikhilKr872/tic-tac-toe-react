@@ -15,10 +15,12 @@ function Board() {
     const [status_7, setStatus_7] = React.useState("");
     const [status_8, setStatus_8] = React.useState("");
   
-    if (!flag) {
-      checkWinner();
-    }
-  
+    // if (!flag) {
+    //   checkWinner();
+    // }
+    React.useEffect(()=>{
+      checkWinner()
+    })
     const cellStatus = [
       { val: status_0, setVal: setStatus_0 },
       { val: status_1, setVal: setStatus_1 },
